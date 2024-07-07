@@ -1,0 +1,20 @@
+.oneProduct__container {
+
+   
+
+        .boxOneproduct {
+
+            display: flex;
+            justify-content: space-between;
+
+            .leftBox {
+
+                width: 587px;
+            }
+
+            .rightBox {
+
+                width: 446px;
+            }
+        }
+}

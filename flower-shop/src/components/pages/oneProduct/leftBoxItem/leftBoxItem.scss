@@ -1,0 +1,25 @@
+.leftBoxItem {
+
+    display: flex;
+    justify-content: space-between;
+
+        .rightImages {
+
+            width: 453px;
+            height: 523px;
+        }
+
+
+        .leftImages {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+                img {
+
+                width: 116px;
+                height: 116px;
+                }
+        }
+}
