@@ -2,21 +2,35 @@ import React from 'react';
 import '../card-product/CardProduct.scss'
 import iconBag from '../icons/icon-bag.png'
 import { Link } from 'react-router-dom';
+import { animateScroll } from 'react-scroll'
 
+const CardProduct = ({el}) => {
 
-const CardProduct = () => {
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            display: 0,
+            duration: 0,
+            smooth: true
+        })
+    }
     return (
+        <>
+        
             <div className="card-product">
-                <div className="title-text">
-                    <Link to={'/OneProduct'}>
-                        <div className="box-title">
-                            <h4>HUGS & KISSES</h4>
-                            <p>$ 79.00-149.00</p>
-                        </div>
-                    </Link>
-                    <img src={iconBag} alt="icon-bag" />  
+                <img className='product-banner' src={el.img} alt="flower" />
+                <div className="title-text">                  
+                    <div className="box-title">
+                        <h4>{el.name}</h4>
+                        <p>$ {el.price}</p>
+                    </div> 
+                    <Link to={`/OneProduct/${el.id}`} onClick={()=>{toTop()}}>
+                        <img src={iconBag} alt="icon-bag" /> 
+                    </Link>              
+                      
                 </div>                   
-            </div>      
+            </div> 
+           
+        </>   
     );
 };
 

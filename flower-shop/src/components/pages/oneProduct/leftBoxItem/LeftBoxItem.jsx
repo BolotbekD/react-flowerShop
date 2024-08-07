@@ -1,19 +1,18 @@
 import React from 'react';
 import './leftBoxItem.scss'
-import imageBouguetRose from './image-leftBox.png'
 
 
-const LeftBoxItem = () => {
+const LeftBoxItem = ({data}) => {
     return (
         <div className='leftBoxItem'>
             <div className="leftImages">
-                <img src={imageBouguetRose} alt="BouguetRose" />
-                <img src={imageBouguetRose} alt="BouguetRose" />
-                <img src={imageBouguetRose} alt="BouguetRose" />
-                <img src={imageBouguetRose} alt="BouguetRose" />
+                <img src={data.img} alt="BouguetRose" />
+                <img src={data.img} alt="BouguetRose" />
+                <img src={data.img} alt="BouguetRose" />
+                <img src={data.img} alt="BouguetRose" />
             </div>
             <div className="rightImages">
-                <img src={imageBouguetRose} alt="BouguetRose" />
+                <img src={data.img} alt="BouguetRose" />
             </div>          
         </div>
     );

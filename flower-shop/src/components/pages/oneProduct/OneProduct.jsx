@@ -1,49 +1,80 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import './oneProduct.scss'
-import SwiperOneProduct from './swiperOneProduct/SwiperOneProduct';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import axios from 'axios'; 
+import { useSelector, useDispatch } from 'react-redux';
+import { setProduct } from '../../../store/oneProductSlice';
+import SwiperOneProduct from './swiperOneProduct/SwiperOneProduct'
+import { addToCart } from '../../../store/cartSlice';
+import { removeCart, updateCart } from '../../../store/cartSlice';
+
+
+
 
 const OneProduct = () => {
+
+    const dispatch = useDispatch()
+    const add = (el) => {
+        dispatch(addToCart(el))
+    }
+
+    const location = useLocation()
+    const idProd = location.pathname.split('/').at(-1) 
+    useEffect(() => {
+        axios(`http://localhost:8080/flowers/${idProd}`)
+            .then(({data}) => dispatch(setProduct(data)))
+    },[])
+
+   
+    const data = useSelector(state => state.productSlice.data)
+    const cart = useSelector(state => state.cartSlice.cart)
+
+    const decrement = (el) => {
+        if (el.count > 1) {
+            dispatch(updateCart({...el, count: el.count -1}))
+        } 
+    }
+    const increment = (el) => {
+        if (el.count < 9)
+        dispatch(updateCart({ ...el, count: el.count + 1 }));
+    };
+   
     return (
         <>
             
             <div className="oneProduct__container container">  
                 <div className="boxOneproduct">
                     <div className="leftBox">
-                        <SwiperOneProduct/>
+                        <SwiperOneProduct data={data}/>
                         <div className="leftBoxDesc">
                             <div className="description">
                                 <Link>Description</Link>
                                 <Link>Aditional information</Link>
                             </div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat 
-                            hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris
-                            eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio,
-                            in molestie diam bibendum sed.
-                            </p>
+                            <p>{data.description}</p>
                         </div>
                     </div>
                     <div className="rightBox">
-                        <h2>TRUE LOVE</h2>
-                        <h4>$ 115,00</h4>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat 
-                        hendrerit...Showmore
-                            </p>
+                        <h2>{data.name}</h2>
+                        <h4>$ {data.price}</h4>
+                        <p>{data.description}</p>
                         <h6>Size:</h6>
-                        <button>S</button>
-                        <button>M</button>
-                        <button>L</button>
-                        <h6>Total $ 115.00 </h6>
+                        <button className='btn-size'>S</button>
+                        <button className='btn-size'>M</button>
+                        <button className='btn-size'>L</button>
+                        <h6>Total $ 0 </h6>
+                        
+                        
                         <div className="count">
                             <div className="incDecriment-btn">
-                                <button>-</button>
-                                <p>1</p>
-                                <button>+</button>
+                                <button onClick={() => {decrement(data)}}>-</button>
+                                <p>0</p>
+                                <button onClick={increment(data)}>+</button>
                             </div>
-                            <button className="add-btn">ADD TO CART</button>
+                            <button className="add-btn" onClick={()=>add({...data, count:1})} >ADD TO CART</button>
                         </div>
+                   
+                    
                         <h6>Check availability at:</h6>
                         <div className="enterZipcode">
                             <input type="text" placeholder='Enter zipcode...' />
@@ -53,20 +84,28 @@ const OneProduct = () => {
                             <div className="choice-title">
                                 <h2>Add A Small Extra Gift</h2>
                                 <Link>VIEW ALL</Link>
-                                <div className="choice-product">
-                                    <div className="choice-cart">
+                            </div>
+                            <div className="choice-product">
+                                <div className="choice-cart">
+                                    <div className="choice-cartTitle">
                                         <h4>Candle</h4>
                                         <p>$ 50,00</p>
                                     </div>
-                                    <div className="choice-cart">
+                                </div>
+                                <div className="choice-cart">
+                                    <div className="choice-cartTitle">
                                         <h4>Candle</h4>
                                         <p>$ 50,00</p>
                                     </div>
-                                    <div className="choice-cart">
+                                </div>
+                                <div className="choice-cart">
+                                    <div className="choice-cartTitle">
                                         <h4>Candle</h4>
                                         <p>$ 50,00</p>
                                     </div>
-                                    <div className="choice-cart">
+                                </div>
+                                <div className="choice-cart">
+                                    <div className="choice-cartTitle">
                                         <h4>Candle</h4>
                                         <p>$ 50,00</p>
                                     </div>
@@ -80,16 +119,23 @@ const OneProduct = () => {
                     <h2>Similar Items</h2>
                     <div className="box-items">
                         <div className="item-cart">
-                            <h4>WHITE ROSES</h4>
-                            <p>$ 89,00 - 345,00</p>
+                            <div className="item-cartTitle">
+                                <h4>WHITE ROSES</h4>
+                                <p>$ 89,00 - 345,00</p>
+                            </div>
+                            
                         </div>
                         <div className="item-cart">
-                            <h4>WHITE ROSES</h4>
-                            <p>$ 89,00 - 345,00</p>
+                            <div className="item-cartTitle">
+                                <h4>WHITE ROSES</h4>
+                                <p>$ 89,00 - 345,00</p>
+                            </div>
                         </div>
                         <div className="item-cart">
-                            <h4>WHITE ROSES</h4>
-                            <p>$ 89,00 - 345,00</p>
+                            <div className="item-cartTitle">
+                                <h4>WHITE ROSES</h4>
+                                <p>$ 89,00 - 345,00</p>
+                            </div>
                         </div>
                     </div>
                 </div>

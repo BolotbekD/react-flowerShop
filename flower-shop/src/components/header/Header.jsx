@@ -3,15 +3,34 @@ import './styles/header.scss'
 import logo from './icons/Logo.png'
 import iconSearch from './icons/icon-search.png'
 import iconDelivery from './icons/icon-delivery.png'
-import iconAcc from './icons/icon-acc.png'
-import iconCart from './icons/icon-cart.png'
-import burgerMenu from './icons/icon-burgerMenu.png'
-import iconMenu from './icons/icon-searchMenu.png'
-import iconMenuAcc from './icons/icon-menuAcc.png'
-import iconMenuLogout from './icons/Icon-logout.png'
-import { Link } from 'react-router-dom';
+
+// import burgerMenu from './icons/icon-burgerMenu.png'
+// import iconMenu from './icons/icon-searchMenu.png'
+// import iconMenuAcc from './icons/icon-menuAcc.png'
+// import iconMenuLogout from './icons/Icon-logout.png'
+import { Link, useNavigate } from 'react-router-dom';
+import MenuAccount from './menuAccount/MenuAccount';
+import { useSelector } from 'react-redux';
+import { MdAccountCircle } from "react-icons/md";
+import { animateScroll } from 'react-scroll';
+import ShoppingCart from './shoppingCart/ShoppingCart';
+import BurgerMenu from './BurgerMenu';
+
 
 const Header = () => {
+
+    const navigate = useNavigate()
+    const userName = useSelector(state => state.userSlice.user)
+    
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            display: 0,
+            duration: 0,
+            smooth: true
+        })
+    }
+    
+
     return (
         <header className='header'>
             <div className='header__text'>
@@ -22,7 +41,7 @@ const Header = () => {
             </div>
             <div className="header__container container">
                
-                <div className="burgerMenu">
+                {/* <div className="burgerMenu">
                     <div className="close">
                         X
                     </div>
@@ -73,9 +92,13 @@ const Header = () => {
                         <img src={iconMenuLogout} alt="icon-burgerLogout" />
                         <h4>Logout</h4>
                     </div>
-                </div>
+                </div> */}
+                
+               
+                
+                
                 <nav className="header__nav">
-                    <Link className='logo' to={"/"}>
+                    <Link className='logo' to={"/"} onClick={()=>{toTop()}}>
                         <img src={logo} alt="logo" />
                     </Link>
                     <div className="main__list">
@@ -93,19 +116,35 @@ const Header = () => {
                         </li>
                         <li>
                             <Link>
-                                <img src={iconAcc} alt="icon-cart" />
+                                <MenuAccount/>
+                                
+                            </Link>
+                            
+                        </li>
+                        <li onClick={() => {
+                                navigate('/Cart')
+                                toTop()
+                            }}>
+                            <Link >
+                                <ShoppingCart/>
                             </Link>
                         </li>
                         <li>
-                            <Link>
-                                <img src={iconCart} alt="icon-cart"/>
-                            </Link>
-                        </li>
-                        <li>
-                            <img src={burgerMenu} alt="burger-menu" />
+                            {/* <img src={burgerMenu} alt="burger-menu" /> */}
+                            <BurgerMenu/>
                         </li>
                     </ul>
                 </nav>
+
+                {userName && 
+                <>  
+                    <div className="accountUser">
+                        <MdAccountCircle />
+                        <h2 className="user">{userName.user.name}</h2>
+                    </div>                 
+                </>
+                    }
+
                 <ul className="header__menu">
                     <li><Link>SHOP ALL</Link></li>
                     <li><Link>BY OCCASSION</Link></li>

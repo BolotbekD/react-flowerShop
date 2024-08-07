@@ -1,0 +1,281 @@
+.checkout__container {
+
+    .checkoutTitle {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+
+            font-weight: 500;
+            font-size: 35px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000;
+            margin: 45px 0 25px;
+        }
+    
+        p {
+    
+            width: 355px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            text-align: center;
+            color: #828282;
+            margin-bottom: 62px;
+        }
+    }
+
+    .checkout__box {
+
+        display: flex;
+        justify-content: space-between;
+
+        .left-box {
+
+            width: 582px;
+
+            .left-box__nav {
+                display: flex;
+                column-gap: 44px;
+
+                a {
+
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    text-transform: uppercase;
+                    color: #707070;
+                }
+            }
+
+            .details {
+
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    column-gap: 5px;
+                    cursor: pointer;
+                    margin: 43px 0 53px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 208%;
+                    text-transform: uppercase;
+                    color: #000;
+                    
+
+                    .num {
+
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: 1px solid #72408A;
+                        color: #72408A;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+
+            .form {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .firstName {
+
+                    width: 270px;
+                    height: 61px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #000;
+
+                    input {
+
+                        height: 29px;
+                        fill: #fff;
+                        stroke-width: 1px;
+                        stroke: #7e7373;
+                    }
+                }
+
+
+            }
+                
+            button {
+                width: 199px;
+                height: 42px;
+                background: #80233a;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+                border: none;
+                margin-top: 60px;
+            }
+        }
+
+        .right-box {
+
+            width: 445px;
+            // height: 597px;
+            padding: 31px 51px;
+            border: 1px solid #d8d8d8;
+            margin-bottom: 72px;
+
+            .right-boxTitle {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #000;
+                }
+
+                a {
+
+                    font-weight: 400;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                    text-align: center;
+                    color: #707070;
+                }
+            }
+
+            p {
+                
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 167%;
+                color: #707070;
+                margin: 10px 0 27px;
+            }
+
+            .right-box__product {
+
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                .product-main {
+
+                    display: flex;
+                    column-gap: 20px;
+                    
+                    .info {
+                    
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+    
+                        h4 {
+    
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 157%;
+                            color: #000;
+                        }
+    
+                        h6 {
+                           
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 157%;
+                            color: #707070;
+                        }
+    
+                        p {
+    
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 157%;
+                            color: #80233a;
+                            margin: 0;
+                        }
+    
+                        h5 {
+    
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 167%;
+                            color: #707070;
+                        }
+                    }
+
+                }
+                .close {
+
+                    cursor: pointer;
+                }
+            }
+
+            .total-box {
+
+                height: 72px;
+                padding: 21px 0 31px;
+                border-top:1px solid #d8d8d8;
+                margin-top: 60px;
+
+                .total {
+
+                    margin-bottom: 10px;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h4 {
+
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 169%;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                }
+
+                .shipping {
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 169%;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 157%;
+                        text-align: right;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+   
+}

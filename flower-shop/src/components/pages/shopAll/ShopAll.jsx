@@ -16,15 +16,39 @@ import imageMaskGroup1 from './images/Mask-group(2).png'
 import imageMaskGroup2 from './images/Mask-group(3).png'
 import imageMaskGroup3 from './images/Mask-group(4).png'
 import imageMaskGroup4 from './images/Mask-group(5).png'
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 import CardProduct from './card-product/CardProduct';
 import SwiperProductMenu from './swiper-cardProductMenu/SwiperProductMenu';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleViewAll, setFilter } from '../../../store/flowersSlice';
+
 
 
 const ShopAll = () => {
+    
+    const dispatch = useDispatch()
+    const data = useSelector(state => state.flowersSlice.data)
+    const viewAll = useSelector(state => state.flowersSlice.viewAll)
+    const displayedData = viewAll ? data : data.slice(0, 8);
+
+    const selectedCategory = useSelector(state => state.flowersSlice.filter)
+   
+
+    const handleCategoryClick = (category) => {
+        dispatch(setFilter(category))
+    }
+
+    const filterFlowers = selectedCategory === 'All Products' 
+        ? displayedData 
+        : displayedData.filter(item => item.category === selectedCategory)
+
+        
     return (
+
+   
         <>
         <section className='carousel__section'>
+            
             <div className="discount">
                 <img src={iconFlower} alt="icon-flower" />
                 <p><span>TODAY ONLY!</span> Special offer for <span>mothr’s day 20% OFF</span></p>
@@ -62,28 +86,35 @@ const ShopAll = () => {
             </div>
         </section>
 
-        <section className='product-menu'>
-
+        <section id='allProd' className='product-menu'>
             <div className="product-menu__container container">
                 <h1 className='menu-title'>OUR BEST SELLERS</h1>
                 <p className='menu-text'>Select a category or go to the section with a convinient filter by product</p>
                 <ul className='all-products'>
-                    <li><button>ALL PRODUCTS</button></li>
-                    <li><button>Happy Birthday</button></li>
-                    <li><button>Congratulations</button></li>
-                    <li><button>Anniversary</button></li>
-                    <li><button>Get Well</button></li>
+                    <button 
+                        onClick={() => handleCategoryClick('All Products')}
+                        className={selectedCategory === 'All Products' ? 'active': ''}>All Products
+                    </button>
+                    <button 
+                        onClick={() => handleCategoryClick('Happy Birthday')}
+                        className={selectedCategory === 'Happy Birthday' ? 'active': ''}>Happy Birthday
+                    </button>
+                    <button 
+                        onClick={() => handleCategoryClick('Congratulation')}
+                        className={selectedCategory === 'Congratulation' ? 'active': ''}>Congratulation
+                    </button>
+                    <button 
+                        onClick={() => handleCategoryClick('Anniversary')}
+                        className={selectedCategory === 'Anniversary' ? 'active': ''}>Anniversary
+                    </button>
+                    <button 
+                        onClick={() => handleCategoryClick('Get Well')}
+                        className={selectedCategory === 'Get Well' ? 'active': ''}>Get Well
+                    </button>
                 </ul>
                 <div className="box-CardProduct">
-
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
-                    <CardProduct/>
+                    {filterFlowers.map((el) => (
+                        <CardProduct el={el} key={el.id} />))}
                 </div>
                 <div className="box-CardProductMenu">
                     <div className="eventBirthday">
@@ -92,7 +123,7 @@ const ShopAll = () => {
                             <Link>View all</Link>
                         </div>                  
                         <div className="titleEvent">
-                            <SwiperProductMenu/>
+                        <SwiperProductMenu products={filterFlowers}/>
                         </div>
                     </div>
                     <div className="eventBirthday">
@@ -123,8 +154,13 @@ const ShopAll = () => {
                         </div>
                     </div>
                 </div>
-                <button className='view-btn'>view all</button>
-
+                
+               <a href="#allProd">
+                    <button className='view-btn' onClick={() => {dispatch(toggleViewAll(true))}}>
+                        {viewAll ? 'Show Less' : 'View All'}
+                    </button>
+               </a>   
+               
             </div>
         </section>
 

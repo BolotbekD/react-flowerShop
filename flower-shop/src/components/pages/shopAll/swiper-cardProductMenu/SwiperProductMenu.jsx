@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import CardProduct from '../card-product/CardProduct';
 
-export default function SwiperProductMenu() {
+export default function SwiperProductMenu({products}) {
   return (
     <>
       <Swiper
@@ -26,21 +26,13 @@ export default function SwiperProductMenu() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-            <CardProduct/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <CardProduct/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <CardProduct/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <CardProduct/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <CardProduct/>
-        </SwiperSlide>      
+
+          <SwiperSlide >
+          
+            <CardProduct  />
+          
+          </SwiperSlide>
+
       </Swiper>
     </>
   );
