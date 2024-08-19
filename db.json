@@ -1,0 +1,287 @@
+{
+  "users": [
+    {
+      "email": "ali@gmail.com",
+      "password": "$2a$10$Ikc48J4rqflZAI2DC6T1pehEXi0u.YPZFC2gSYz3i9kAfrGMzzhBC",
+      "name": "ali",
+      "id": 1
+    },
+    {
+      "email": "roma@mail.com",
+      "password": "$2a$10$4aaSbjBdHnmv2rIGwzHqn.VDXRjE6dpkFci4BtapR6/KCJv8/uywC",
+      "name": "ramazan",
+      "id": 2
+    },
+    {
+      "email": "example@gmail.com",
+      "password": "$2a$10$tgglooyYp2hQgb/BlSOkdOpUdt.kLilEDrpDJp28.aTzB6rdDriSu",
+      "name": "ramazan",
+      "id": 3
+    },
+    {
+      "email": "user@mail.com",
+      "password": "$2a$10$01n5ASOHnN4VLYJR9LqBb.yrChzaK6m1PjI6uMltl9D3WxKPK8wOK",
+      "name": "roma",
+      "id": 4
+    },
+    {
+      "email": "Nur@mail.com",
+      "password": "$2a$10$rxzpw3tNn30UXe/Iisgm1eo/nm0bksYLL7XcvhrDn8vykNhe2dHKu",
+      "name": "Nursultan",
+      "id": 5
+    }
+  ],
+  "flowers": [
+    {
+      "id": 1,
+      "name": "Rose",
+      "color": "Red",
+      "price": 10.99,
+      "description": "A beautiful red rose.",
+      "category": "Happy Birthday",
+      "img": "https://p0.zoon.ru/preview/K9Fo9tcoozKqFU5dHs4ccA/630x384x85/1/6/8/original_6265090cb0de507c0732a939_65c25e319fff19.20509037.jpg",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tulip",
+      "color": "Yellow",
+      "price": 8.49,
+      "description": "A vibrant yellow tulip.",
+      "category": "Congratulation",
+      "img": "https://p1.zoon.ru/preview/BAvdP7ZVN46_PfaHvEfHhQ/630x384x85/1/0/2/original_52c0c6bf40c0886b7c8f1268_660f941ac27847.17575760.jpg",
+      "size": [
+        "S",
+        "M"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lily",
+      "color": "White",
+      "price": 12.99,
+      "description": "Elegant white lilies.",
+      "category": "Congratulation",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8QZdfou5wxkxQp0kifgOWBIZjQyyq2RcicosjOFIlABxTZi-kmjJHT1laGtKdXqmNlw&usqp=CAU",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Orchid",
+      "color": "Purple",
+      "price": 15.49,
+      "description": "A stunning purple orchid.",
+      "category": "Happy Birthday",
+      "img": "https://content2.flowwow-images.com/data/flowers/524x524/58/1719229420_47600958.jpg",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Daisy",
+      "color": "White",
+      "price": 7.99,
+      "description": "Classic white daisies.",
+      "category": "Anniversary",
+      "img": "https://p0.zoon.ru/e/c/5d2c9c153533cf0933378667_5d2c9c95a181a.jpg",
+      "size": [
+        "S",
+        "M"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sunflower",
+      "color": "Yellow",
+      "price": 9.99,
+      "description": "Bright and cheerful sunflowers.",
+      "category": "Congratulation",
+      "img": "https://content3.flowwow-images.com/data/flowers/262x262/19/1705694385_55921819.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Carnation",
+      "color": "Pink",
+      "price": 11.49,
+      "description": "Lovely pink carnations.",
+      "category": "Get Well",
+      "img": "https://oasis-city.ru/uploadedFiles/eshopimages/big/4-11.jpg",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Peony",
+      "color": "Red",
+      "price": 14.99,
+      "description": "Luxurious red peonies.",
+      "category": "Congratulation",
+      "img": "https://oasis-city.ru/uploadedFiles/eshopimages/big/4-16.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Gerbera",
+      "color": "Orange",
+      "price": 10.49,
+      "description": "Bright orange gerberas.",
+      "category": "Congratulation",
+      "img": "https://oasis-city.ru/uploadedFiles/eshopimages/icons/200x200/4-36.jpg",
+      "size": [
+        "S",
+        "M"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Iris",
+      "color": "Blue",
+      "price": 13.49,
+      "description": "Beautiful blue irises.",
+      "category": "Happy Birthday",
+      "img": "https://p2.zoon.ru/9/7/5567096f40c0886e4c8ce145_666c14670dc089.43895954.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Chrysanthemum",
+      "color": "Pink",
+      "price": 8.99,
+      "description": "Elegant pink chrysanthemums.",
+      "category": "Get Well",
+      "img": "https://p1.zoon.ru/b/4/5a41c15ea24fd94a005fbe0e_64e61e04ba9791.11014907.jpg",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Magnolia",
+      "color": "White",
+      "price": 16.49,
+      "description": "Graceful white magnolias.",
+      "category": "Happy Birthday",
+      "img": "https://roza.vinnica.ua/wp-content/uploads/2022/02/korob.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Hydrangea",
+      "color": "Blue",
+      "price": 18.99,
+      "description": "Gorgeous blue hydrangeas.",
+      "category": "Congratulation",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPCjzUwe-4tFH9b7j_7f3CbKpRUgTodQScVw&s",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Anemone",
+      "color": "Purple",
+      "price": 11.99,
+      "description": "Beautiful purple anemones.",
+      "category": "Anniversary",
+      "img": "https://cs2.livemaster.ru/storage/53/82/25b4c65766b82c5dc65a1ca7cagd--tsvety-i-floristika-tsvetochnaya-kompozitsiya-v-yaschike-sire.jpg",
+      "size": [
+        "S",
+        "M"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Zinnia",
+      "color": "Red",
+      "price": 9.49,
+      "description": "Bright red zinnias.",
+      "category": "Anniversary",
+      "img": "https://cs5.livemaster.ru/storage/1a/7b/ec0ed582781ed4b3a09726534fx2--tsvety-i-floristika-tsvetochnyj-konvert-love-podarok-rozy-ukr.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Freesia",
+      "color": "White",
+      "price": 12.49,
+      "description": "Delicate white freesias.",
+      "category": "Congratulation",
+      "img": "https://premium-flowers.ru/upload/iblock/efe/top_12_samyh_krasivyh_cvetov_2.jpg",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Snapdragon",
+      "color": "Yellow",
+      "price": 10.99,
+      "description": "Cheerful yellow snapdragons.",
+      "category": "Get Well",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXAM5BpFBaeyVlaNnqKd0O94ETdlDRIULl6Q&s",
+      "size": [
+        "S",
+        "M"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Hibiscus",
+      "color": "Red",
+      "price": 14.99,
+      "description": "Vivid red hibiscus flowers.",
+      "category": "Get Well",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCyjXB0eGqur9WJNoNOtKPJSwpZqqpisLFIFf5jtgcYDtYJ4W0Un1QU0YnYKgyPwl8rsk&usqp=CAU",
+      "size": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Dahlia",
+      "color": "Red",
+      "price": 12.99,
+      "description": "Bold red dahlias.",
+      "category": "Get Well",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvI0SVI3CPWhHMX9hXFG3kEEb6lbTOgTz1V1WxacFrmyFExU-1hoXrGV79CcsWXGb2Rck&usqp=CAU",
+      "size": [
+        "M",
+        "L"
+      ]
+    }
+  ]
+}

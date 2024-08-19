@@ -1,0 +1,95 @@
+.box {
+    
+    background: url(../images/BG.png)center/cover no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-top: 133px;
+    text-align: center;
+
+    h1 {
+        
+        font-weight: 600;
+        font-size: 74px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+        width: 224px;
+        height: 55px;
+        background: #80233a;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        border: none;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 699px) {
+
+    .box {
+        padding-top: 30px;
+        height: 225px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        button {
+
+            width: 133px;
+            height: 32px;
+            font-size: 13px;
+        }
+    }
+
+
+    
+}
+
+@media (max-width: 499px) {
+
+    .box {
+
+        padding-top: 25px;
+    }
+
+    .carousel__section .discount p {
+        width: 220px;
+    }
+
+    .box h1 {
+
+        font-size: 30px;
+    }
+
+    .box h2 {
+
+        font-size: 24px;
+    }
+
+    .box button {
+        width: 133px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+}

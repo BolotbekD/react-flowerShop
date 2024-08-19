@@ -1,0 +1,340 @@
+.oneProduct__container {
+
+    padding: 62px 0 120px;
+    overflow-x: hidden;
+
+        .boxOneproduct {
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: 213px;
+
+
+            .leftBox {
+
+                width: 587px;
+
+                .leftBoxItem {
+
+                    margin-bottom: 62px;
+                }
+
+                .swiper-button-next{
+                    top: 563px;
+                    right: 100px;
+                }
+                .swiper-button-prev{
+                    left: 100px;
+                    top: 563px;
+                }
+
+                .leftBoxDesc {
+                    margin-top: 40px;
+                    .description a{
+
+                        margin-right: 62px;
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 162%;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        color: black;
+                        transition: 0.2s;
+                    }
+                    .description a:hover{
+
+                        color: #80233a;
+
+                    }
+
+                    p {
+
+                        
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #707070;
+                        margin: 38px 0 70px;
+                    }
+                }
+            }
+
+            .rightBox {
+
+                width: 446px;
+
+                h2 { 
+
+                    
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 135%;
+                    text-transform: uppercase;
+                    color: #000;
+                }
+
+                h4 {
+
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 144%;
+                    text-transform: capitalize;
+                    color: #828282;
+                    margin: 12px 0 19px;
+                }
+
+                p {
+                    width: 444px;
+                    height: 54px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 169%;
+                    color: #707070;
+                }
+
+                h6 {
+
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #000;
+                    margin: 9px 0 19px;
+                }
+
+                .btn-size {
+
+                    width: 69px;
+                    height: 36px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #707070;
+                    background-color: #fff;
+                    margin-right: 10px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #707070;
+                    border: 1px solid #efefef;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    margin-bottom: 41px;
+                }
+
+                .btn-size:hover {
+
+                    color: #80233a;
+                    border: 1px solid #80233a;
+                }
+
+                .count {
+
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 42px;
+
+                    .incDecriment-btn {
+
+                        width: 103px;
+                        height: 45px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        background-color: #efefef;
+
+                        p {
+                            
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 169%;
+                            color: #707070;
+                            width: 5px;
+                            height: 27px;
+                        }
+
+                        button {
+
+                            border: none;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 169%;
+                            color: #707070;
+                            cursor: pointer;
+                        }
+                    }
+                    .add-btn {
+                        width: 328px;
+                        height: 44px;
+                        background-color: #80233A;
+                        font-weight: 700;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .enterZipcode {
+
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 64px;
+
+                    input {
+                        width: 265px;
+                        height: 43px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #707070;
+                        border: 1px solid #efefef;;
+                        padding: 0 10px;
+                    }
+
+                    button {
+
+                        width: 170px;
+                        height: 43px;
+                        background: #f4f2f2;
+                        border: none;
+                        font-weight: 400;
+                        font-size: 13px;
+                        text-align: center;
+                        color: #000;
+                        cursor: pointer;
+                    }
+                }
+
+                .rightBox-choice {
+
+                    .choice-title {
+
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #efcfda;
+                        height: 25px;
+                        margin-bottom: 20px;
+
+                        h2 {
+
+                            font-weight: 600;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: #000;
+                        }
+
+                        a {
+                           
+                            font-weight: 400;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            text-decoration: underline;
+                            text-decoration-skip-ink: none;
+                            text-align: center;
+                            color: #000;
+                        }
+                    }
+
+                    .choice-product {
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        .choice-cart {
+
+                            background: url(./images/image-choice-cart.png)center/cover no-repeat;
+                            width: 98px;
+                            height: 120px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: end;
+
+                            .choice-cartTitle {
+
+                                width: 98px;
+                                height: 42px;
+                                background-color: #fff;
+
+                                h4 {
+
+                                    
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    text-transform: capitalize;
+                                    color: #000;
+                                    margin: 0;
+                                }
+
+                                p {
+                                                                       
+                                    font-weight: 300;
+                                    font-size: 12px;
+                                    text-transform: capitalize;
+                                    color: #000;
+                                    height: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .similarItems {
+
+            h2 {
+    
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 135%;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 30px;
+            }
+
+            .box-items {
+
+                display: flex;
+                justify-content: space-between;
+
+                .item-cart {
+
+                    width: 338px;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    
+                    background: url(./images/Image-itemCart.png)center/cover no-repeat;
+
+                    .item-cartTitle {
+
+                        background-color: #fff;
+                        width: 100%;
+                        
+
+                        h4 {
+
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 130%;
+                            text-transform: uppercase;
+                            color: #000;
+                            margin: 21px 0 15px;
+                        }
+
+                        p {
+
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 130%;
+                            text-transform: capitalize;
+                            color: #828282;
+                        }
+                    }
+                }
+            }
+        }
+}
