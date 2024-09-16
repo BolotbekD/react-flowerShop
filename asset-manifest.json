@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/flower-shop/static/css/main.8ad17a0d.css",
+    "main.js": "/flower-shop/static/js/main.802f8f4a.js",
+    "static/media/BG2.png": "/flower-shop/static/media/BG2.3019f8bc4227db8f9415.png",
+    "static/media/BG.png": "/flower-shop/static/media/BG.00cedfcef5a334b6e320.png",
+    "static/media/image-BGdiscount.png": "/flower-shop/static/media/image-BGdiscount.adb55a40dadb4acf5ce4.png",
+    "static/media/BG3.png": "/flower-shop/static/media/BG3.ffb2c1612e03dc1668b8.png",
+    "static/media/image-aboutUs.png": "/flower-shop/static/media/image-aboutUs.219a2d5781e354e60d5c.png",
+    "static/media/image-flowers.png": "/flower-shop/static/media/image-flowers.ba0deb4c8e87c70d5b74.png",
+    "static/media/Mask-group(1).png": "/flower-shop/static/media/Mask-group(1).643ef4d71ec22c882c20.png",
+    "static/media/Image-itemCart.png": "/flower-shop/static/media/Image-itemCart.affc871f9b133e696532.png",
+    "static/media/Mask-group(2).png": "/flower-shop/static/media/Mask-group(2).f7e67530878982f6cc11.png",
+    "static/media/Mask-group(5).png": "/flower-shop/static/media/Mask-group(5).d7db32cd1bfd68a9fd59.png",
+    "static/media/Mask-group(4).png": "/flower-shop/static/media/Mask-group(4).fc89bdf766a61b540408.png",
+    "static/media/Mask-group(3).png": "/flower-shop/static/media/Mask-group(3).150f163561d071310731.png",
+    "static/media/pngwing .png": "/flower-shop/static/media/pngwing .9d0b67addd6817460462.png",
+    "static/media/pngwing 2.png": "/flower-shop/static/media/pngwing 2.7b52fba8cae90d68db82.png",
+    "static/media/image-prod.png": "/flower-shop/static/media/image-prod.ae62cecb3ae7987a3bda.png",
+    "static/media/Logo.png": "/flower-shop/static/media/Logo.5acf974d41572a76f08c.png",
+    "static/media/image-choice-cart.png": "/flower-shop/static/media/image-choice-cart.008fb9e2286295fa7111.png",
+    "index.html": "/flower-shop/index.html",
+    "main.8ad17a0d.css.map": "/flower-shop/static/css/main.8ad17a0d.css.map",
+    "main.802f8f4a.js.map": "/flower-shop/static/js/main.802f8f4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ad17a0d.css",
+    "static/js/main.802f8f4a.js"
+  ]
+}
