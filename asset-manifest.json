@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-flowerShop/static/css/main.cbba9728.css",
-    "main.js": "/react-flowerShop/static/js/main.bae4ef0a.js",
+    "main.js": "/react-flowerShop/static/js/main.fe93853b.js",
     "static/media/BG2.png": "/react-flowerShop/static/media/BG2.3019f8bc4227db8f9415.png",
     "static/media/BG.png": "/react-flowerShop/static/media/BG.00cedfcef5a334b6e320.png",
     "static/media/image-BGdiscount.png": "/react-flowerShop/static/media/image-BGdiscount.adb55a40dadb4acf5ce4.png",
@@ -21,10 +21,10 @@
     "static/media/image-choice-cart.png": "/react-flowerShop/static/media/image-choice-cart.008fb9e2286295fa7111.png",
     "index.html": "/react-flowerShop/index.html",
     "main.cbba9728.css.map": "/react-flowerShop/static/css/main.cbba9728.css.map",
-    "main.bae4ef0a.js.map": "/react-flowerShop/static/js/main.bae4ef0a.js.map"
+    "main.fe93853b.js.map": "/react-flowerShop/static/js/main.fe93853b.js.map"
   },
   "entrypoints": [
     "static/css/main.cbba9728.css",
-    "static/js/main.bae4ef0a.js"
+    "static/js/main.fe93853b.js"
   ]
 }
